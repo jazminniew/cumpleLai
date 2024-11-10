@@ -295,3 +295,78 @@ h2 {
 }
 
 
+
+
+
+
+
+
+/* Estilos generales para la versión móvil */
+@media (max-width: 600px) {
+    /* Estilos para la navbar */
+    nav {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5rem 1rem; /* Reducir el tamaño del padding */
+        gap: 20px; /* Reducir el espacio entre los enlaces */
+        font-size: 16px; /* Ajustar el tamaño de la fuente */
+    }
+
+    .nav-link {
+        font-size: 14px; /* Reducir tamaño de fuente de los enlaces */
+    }
+
+    /* Bienvenida */
+    .welcome h1 {
+        font-size: 2rem; /* Reducir el tamaño del texto */
+    }
+
+    .welcome-image {
+        width: 100%; /* Hacer que la imagen ocupe todo el ancho */
+        height: auto; /* Ajustar altura proporcional */
+    }
+
+    /* Collage */
+    .collage-container {
+        grid-template-columns: 1fr; /* Colocar los elementos en una sola columna */
+        padding: 2rem; /* Reducir el padding */
+    }
+
+    .collage-item {
+        width: 100%; /* Asegurarse de que las imágenes ocupen todo el ancho */
+        height: auto;
+    }
+
+    /* Estilo para la galería */
+    .carousel-container {
+        width: 100%; /* Asegurar que el carrusel ocupe todo el ancho disponible */
+        height: 50vh; /* Reducir la altura */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Asegurar que la imagen del carrusel ocupe todo el ancho */
+        height: auto; /* Ajustar la altura proporcional */
+    }
+
+    .carousel-button {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    /* H2 */
+    h2 {
+        font-size: 1.5rem; /* Reducir tamaño del h2 */
+    }
+
+    /* Comic Footer */
+    .comic-footer {
+        padding: 10px;
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+    }
+
+    .comic-footer p {
+        font-size: 1rem; /* Reducir tamaño de la fuente */
+    }
+}
+
