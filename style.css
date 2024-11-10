@@ -278,16 +278,15 @@ h2 {
 }
 
 
+
 /* Responsividad para dispositivos móviles */
 @media (max-width: 600px) {
     .carousel-container {
         position: relative;
         width: 90%;
         max-width: 1000px;
-        margin-top: -20px; /* Acerca el contenedor al de arriba */
-        /* Remover el height: 100vh; para no tomar toda la altura de la pantalla */
+        height: 20vh; /* Un poco menos que 100vh para que haya espacio alrededor */
     }
-    
     .welcome {
         padding-top: 100px; /* Ajusta el padding de bienvenida */
     }
