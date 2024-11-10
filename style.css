@@ -1,0 +1,296 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Poppins, sans-serif;
+    color: #333;
+    background-color: #cfcfcf;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: none;
+}
+/* Estilos para el Navbar */
+/* Estilos para el Navbar con efecto cómic */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: #fff; /* Fondo blanco */
+    width: auto;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+    box-shadow: 4px 4px 0px #000, 8px 8px 0px rgba(0, 0, 0, 0.2); /* Sombra negra gruesa estilo cómic */
+    border: 2px solid #000; /* Borde negro */
+
+}
+
+
+/* Estilos para los enlaces */
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones para el enlace */
+    position: relative;
+}
+
+/* Efecto al pasar el cursor por encima del enlace */
+.nav-link:hover {
+    color: #ff4500; /* Cambia el color del texto en hover */
+    transform: scale(1.1); /* Leve agrandamiento del texto */
+}
+
+/* Efecto de subrayado animado tipo cómic */
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff4500; /* Color del subrayado en hover */
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expande el subrayado al hacer hover */
+}
+
+/* Bienvenida */
+.welcome {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.welcome h1 {
+  font-size: 4rem;
+    color: rgb(237, 237, 237); /* Texto en color negro */
+    text-shadow: 4px 4px 0 #000; /* Sombra negra gruesa y desplazada */
+}
+
+.welcome-image {
+    width: 90%;
+    max-height: 100vh;
+    object-fit: cover;
+    border-radius: 30px; /* Ajusta el radio como prefieras */
+    margin-top: 30px;
+}
+
+/* Collage */
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+    gap: 30px;
+    padding: 4.5rem;
+    margin-top: 20px;
+}
+
+.collage-item {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 0 #000; /* Sombra negra desplazada estilo cómic */
+}
+
+.collage-item:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 7px 0 #000; /* Sombra un poco más gruesa al hacer hover */
+}
+
+/* Estilo para la galería */
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+}
+
+.collage {
+    display: flex; /* Asegura que el contenido se alinee de manera flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Tomará el 100% de la altura de la ventana */
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Un poco menos que 100vh para que haya espacio alrededor */
+    background-color: transparent;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+    border-radius: 10px; /* Border-radius en las imágenes */
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan de los bordes redondeados */
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px; /* Se aplica a las imágenes dentro de los elementos del carrusel */
+    object-fit: cover; /* Hace que las imágenes cubran todo el contenedor sin deformarse */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-item:active {
+    opacity: 0.7;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .collage-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gift-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo general del scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Fondo claro del track */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0; /* Color gris del thumb */
+    border-radius: 10px; /* Bordes redondeados para un aspecto moderno */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Color más oscuro al hacer hover */
+}
+
+/* Para compatibilidad con Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #b0b0b0 #f1f1f1; /* Thumb gris y track claro */
+}
+
+
+/* Comic Footer */
+.comic-footer {
+    background-color: #ff440097; /* Color amarillo de fondo */
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0; /* Bordes redondeados arriba */
+    box-shadow: 5px 5px 0 #000; /* Sombra negra estilo cómic */
+    font-family: 'Comic Sans MS', 'Comic Neue', sans-serif; /* Tipografía tipo cómic */
+    color: #fcfcfc; /* Color de texto */
+    position: relative;
+}
+
+.comic-footer p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #222222; /* Sombra clara en el texto */
+}
+
+.comic-footer a {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.comic-footer a:hover {
+    color: #000;
+    text-shadow: 2px 2px #ffd700; /* Sombra amarilla en hover */
+}
+
+/* Efecto de borde en estilo cómic */
+.comic-footer::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    right: 0;
+    bottom: -5px;
+    border: 3px solid #000;
+    border-radius: 25px; /* Redondeado del borde */
+    z-index: -1; /* Coloca el borde detrás del contenido */
+}
+
