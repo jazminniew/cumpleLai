@@ -208,22 +208,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-
-/* Responsividad */
-@media (max-width: 600px) {
-    .welcome h1 {
-        font-size: 2rem;
-    }
-
-    .collage-container {
-        grid-template-columns: 1fr;
-    }
-
-    .gift-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Estilo general del scrollbar */
 ::-webkit-scrollbar {
     width: 8px; /* Ancho del scrollbar */
@@ -297,16 +281,17 @@ h2 {
 
 /* Responsividad para dispositivos móviles */
 @media (max-width: 600px) {
-    /* Ajusta los márgenes de los contenedores principales */
-    .collage {
-        gap: 10px; /* Reduce el espacio entre los elementos */
-        padding: 2rem 1rem; /* Reduce el padding horizontal y ajusta vertical */
+    .carousel-container {
+        position: relative;
+        width: 90%;
+        max-width: 1000px;
+        height: 100vh; /* Un poco menos que 100vh para que haya espacio alrededor */
     }
 
     /* Si hay otros contenedores, ajusta el gap y padding de la misma manera */
     .carousel-container {
         margin: 10px; /* Ajusta el margen */
-        padding: 1rem; /* Ajusta el padding */
+        padding: 2rem; /* Ajusta el padding */
     }
 
     .welcome {
