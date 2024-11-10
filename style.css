@@ -287,13 +287,6 @@ h2 {
         max-width: 1000px;
         height: 100vh; /* Un poco menos que 100vh para que haya espacio alrededor */
     }
-
-    /* Si hay otros contenedores, ajusta el gap y padding de la misma manera */
-    .carousel-container {
-        margin: 10px; /* Ajusta el margen */
-        padding: 2rem; /* Ajusta el padding */
-    }
-
     .welcome {
         padding-top: 100px; /* Ajusta el padding de bienvenida */
     }
