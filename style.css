@@ -293,3 +293,43 @@ h2 {
     z-index: -1; /* Coloca el borde detrás del contenido */
 }
 
+/* Responsividad para dispositivos móviles */
+@media (max-width: 600px) {
+    /* Reducir los márgenes de los contenedores */
+    .collage-container {
+        gap: 10px; /* Reduce el espacio entre los elementos */
+        padding: 2rem; /* Ajusta el padding si es necesario */
+    }
+
+    /* Si tienes otros contenedores, puedes aplicar el mismo concepto */
+    .carousel-container {
+        margin: 10px; /* Ajusta el margen */
+    }
+
+    /* Ajustar el espacio de la bienvenida */
+    .welcome {
+        padding-top: 50px; /* Ajustar el padding si es necesario */
+    }
+
+    .welcome h1 {
+        font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .welcome-image {
+        width: 100%; /* Hace que la imagen ocupe el ancho completo */
+        max-height: 50vh; /* Ajusta la altura si es necesario */
+    }
+
+    /* Ajuste de la galería */
+    .carousel-container {
+        padding: 1rem; /* Ajustar padding */
+    }
+
+    .carousel-item {
+        border-radius: 5px; /* Redondea menos los bordes */
+    }
+
+    .comic-footer {
+        padding: 10px; /* Reduce el padding del pie de página */
+    }
+}
