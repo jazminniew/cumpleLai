@@ -293,43 +293,44 @@ h2 {
     z-index: -1; /* Coloca el borde detrás del contenido */
 }
 
+
+
 /* Responsividad para dispositivos móviles */
 @media (max-width: 600px) {
-    /* Reducir los márgenes de los contenedores */
+    /* Ajusta los márgenes de los contenedores principales */
     .collage-container {
         gap: 10px; /* Reduce el espacio entre los elementos */
-        padding: 2rem; /* Ajusta el padding si es necesario */
+        padding: 2rem 1rem; /* Reduce el padding horizontal y ajusta vertical */
     }
 
-    /* Si tienes otros contenedores, puedes aplicar el mismo concepto */
+    /* Si hay otros contenedores, ajusta el gap y padding de la misma manera */
     .carousel-container {
         margin: 10px; /* Ajusta el margen */
+        padding: 1rem; /* Ajusta el padding */
     }
 
-    /* Ajustar el espacio de la bienvenida */
     .welcome {
-        padding-top: 50px; /* Ajustar el padding si es necesario */
+        padding-top: 50px; /* Ajusta el padding de bienvenida */
     }
 
     .welcome h1 {
-        font-size: 2rem; /* Ajusta el tamaño de la fuente */
+        font-size: 2rem; /* Ajusta el tamaño del título */
     }
 
     .welcome-image {
         width: 100%; /* Hace que la imagen ocupe el ancho completo */
-        max-height: 50vh; /* Ajusta la altura si es necesario */
+        max-height: 50vh; /* Ajusta la altura de la imagen */
+        margin-top: 10px; /* Añade un pequeño margen superior */
     }
 
-    /* Ajuste de la galería */
-    .carousel-container {
-        padding: 1rem; /* Ajustar padding */
+    /* Ajustar los márgenes de la galería */
+    .carousel {
+        margin-top: 0; /* Quitar márgenes innecesarios */
+        gap: 10px; /* Ajusta el gap entre las imágenes si es necesario */
     }
 
-    .carousel-item {
-        border-radius: 5px; /* Redondea menos los bordes */
-    }
-
+    /* Ajustar el pie de página */
     .comic-footer {
-        padding: 10px; /* Reduce el padding del pie de página */
+        padding: 10px; /* Reduce el padding en el pie de página */
     }
 }
