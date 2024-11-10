@@ -278,26 +278,21 @@ h2 {
 }
 
 
+
 /* Responsividad para dispositivos móviles */
 @media (max-width: 600px) {
     .carousel-container {
         position: relative;
         width: 90%;
         max-width: 1000px;
-        margin-top: 0; /* Asegura que no haya espacio superior */
-        margin-bottom: 0; /* Elimina cualquier margen inferior */
-        padding: 0; /* Elimina cualquier padding */
+        height: 20vh; /* Un poco menos que 100vh para que haya espacio alrededor */
     }
-
-    /* Elimina margen y padding en los contenedores anteriores */
     .welcome {
-        padding-top: 0; /* Ajusta el padding de bienvenida */
-        margin-bottom: 0; /* Elimina el margen inferior */
+        padding-top: 100px; /* Ajusta el padding de bienvenida */
     }
 
     .welcome h1 {
         font-size: 2rem; /* Ajusta el tamaño del título */
-        margin: 0; /* Elimina margen */
     }
 
     .welcome-image {
@@ -315,6 +310,5 @@ h2 {
     /* Ajustar el pie de página */
     .comic-footer {
         padding: 10px; /* Reduce el padding en el pie de página */
-        margin-top: 0; /* Elimina cualquier espacio superior */
     }
 }
