@@ -155,6 +155,9 @@ nav {
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .carousel-item {
@@ -166,10 +169,14 @@ nav {
 }
 
 .carousel-item img {
-    width: 100%;
-    border-radius: 10px; /* Se aplica a las imágenes dentro de los elementos del carrusel */
-    object-fit: cover; /* Hace que las imágenes cubran todo el contenedor sin deformarse */
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+    height: 100%; /* Ocupa la altura completa del contenedor */
+    max-width: 100%; /* Asegura que no se salga del contenedor */
+    max-height: 100%; /* Asegura que no se salga del contenedor */
+    border-radius: 10px; /* Aplica bordes redondeados */
+    object-fit: contain; /* Ajusta la imagen para que se adapte sin recortarse */
 }
+
 
 .carousel-button {
     position: absolute;
