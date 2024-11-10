@@ -298,7 +298,7 @@ h2 {
 /* Responsividad para dispositivos móviles */
 @media (max-width: 600px) {
     /* Ajusta los márgenes de los contenedores principales */
-    .collage-container {
+    .collage {
         gap: 10px; /* Reduce el espacio entre los elementos */
         padding: 2rem 1rem; /* Reduce el padding horizontal y ajusta vertical */
     }
@@ -310,7 +310,7 @@ h2 {
     }
 
     .welcome {
-        padding-top: 50px; /* Ajusta el padding de bienvenida */
+        padding-top: 100px; /* Ajusta el padding de bienvenida */
     }
 
     .welcome h1 {
