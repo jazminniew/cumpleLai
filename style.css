@@ -287,12 +287,7 @@ h2 {
 
 /* Para tablets y pantallas medianas (600px a 900px) */
 @media (max-width: 900px) {
-    /* Navbar */
-    nav {
-        gap: 30px;
-        padding: 0.8rem 1.5rem;
-        font-size: 18px;
-    }
+
 
     /* Texto de bienvenida */
     .welcome h1 {
@@ -319,13 +314,6 @@ h2 {
 
 /* Para dispositivos móviles (max-width: 600px) */
 @media (max-width: 600px) {
-    /* Navbar */
-    nav {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0.6rem 1rem;
-        font-size: 16px;
-    }
 
     /* Texto de bienvenida */
     .welcome {
