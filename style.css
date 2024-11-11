@@ -331,11 +331,22 @@ h2 {
     }
 
     /* Collage */
-    .collage-container {
-        grid-template-columns: 1fr;
-        padding: 1.5rem;
-        margin: 0;
-    }
+/* Collage */
+.collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 30vh; /* Coincide con la altura de .carousel-container */
+    padding: 0 20px; /* Espaciado opcional */
+}
+
+.carousel-container, .collage-container {
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
 
     .collage-item {
         box-shadow: 3px 3px 0 #000;
@@ -344,14 +355,15 @@ h2 {
     /* Carrusel */
     .carousel-container {
         width: 90%;
-        height: 100vh;
-        margin-top: -200px;
+        height:90vh;
+
     }
 
     /* Footer */
     .comic-footer {
         padding: 15px;
         font-size: 1rem;
+        margin-top: 220px;
     }
 }
 
