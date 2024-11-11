@@ -321,7 +321,7 @@ h2 {
     }
 
     .welcome h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .welcome-image {
@@ -343,8 +343,8 @@ h2 {
 
     /* Carrusel */
     .carousel-container {
-        width: 60%;
-        height: 40vh;
+        width: 90%;
+        height: 100vh;
     }
 
     /* Footer */
