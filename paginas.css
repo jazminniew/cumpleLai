@@ -101,16 +101,9 @@ nav {
     object-fit: cover;
     border-radius: 30px; /* Ajusta el radio como prefieras */
     margin-top: 30px;
+    
 }
 
-/* Collage */
-.collage-container {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr); /* 3 columnas de tamaño igual */
-    gap: 30px;
-    padding: 4.5rem;
-
-}
 
 .collage-item {
     width: 100%;
@@ -120,10 +113,6 @@ nav {
     box-shadow: 5px 5px 0 #000; /* Sombra negra desplazada estilo cómic */
 }
 
-.collage-item:hover {
-    transform: scale(1.06);
-
-}
 
 /* Estilo para la galería */
 
@@ -132,12 +121,7 @@ nav {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease;
 }
 
-.collage {
-    display: flex; /* Asegura que el contenido se alinee de manera flexible */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Tomará el 100% de la altura de la ventana */
-}
+
 
 .carousel-container {
     position: relative;
@@ -322,7 +306,7 @@ h2 {
 /*Collage de fotos nuestras*/
 .collage {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-template-columns: repeat(3, 1fr); /* 4 columnas */
     grid-template-rows: repeat(3, 200px);  /* 3 filas de 200px */
     gap: 20px; /* Espacio entre imágenes */
     padding: 100px 60px;
@@ -342,7 +326,7 @@ h2 {
 /* Personalización de tamaños de imagen para el collage */
 .collage img:nth-child(1) {
     grid-column: span 2; /* Ocupa 2 columnas */
-    grid-row: span 1;     /* Ocupa 2 filas */
+    grid-row: span 2;     /* Ocupa 2 filas */
 }
 
 .collage img:nth-child(2) {
@@ -377,21 +361,6 @@ h2 {
 .collage img:nth-child(8) {
     grid-column: span 1;
     grid-row: span 1;
-}
-
-.collage img:nth-child(9) {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.collage img:nth-child(10) {
-    grid-column: span 0;
-    grid-row: span 2;
-}
-
-.collage img:nth-child(11) {
-    grid-column: span 2;
-    grid-row: span 2;
 }
 
 
