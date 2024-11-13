@@ -106,7 +106,7 @@ nav {
 /* Collage */
 .collage-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+    grid-template-columns: repeat(4, 2fr); /* 3 columnas de tamaño igual */
     gap: 30px;
     padding: 4.5rem;
 
@@ -121,8 +121,8 @@ nav {
 }
 
 .collage-item:hover {
-    transform: scale(1.1);
-    box-shadow: 7px 7px 0 #000; /* Sombra un poco más gruesa al hacer hover */
+    transform: scale(1.06);
+
 }
 
 /* Estilo para la galería */
@@ -283,7 +283,6 @@ h2 {
     border-radius: 25px; /* Redondeado del borde */
     z-index: -1; /* Coloca el borde detrás del contenido */
 }
-
 
 
 /* Responsividad para dispositivos móviles */
